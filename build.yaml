@@ -26,5 +26,5 @@ include:
   - board: nice_nano
     shield: dactyl_manuform_dongle
     snippet: zmk-usb-logging
-  - board: nnice_nano
+  - board: nice_nano
     shield: settings_reset
