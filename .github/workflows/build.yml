@@ -4,5 +4,6 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
-    with:
-      cmake-args: -DZMK_EXTRA_MODULES=/github/workspace/boards
+    env:
+      # Tell the workflow where your custom boards/shields folder is
+      ZMK_EXTRA_MODULES: "/github/workspace/boards"
