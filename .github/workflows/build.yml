@@ -3,6 +3,4 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.4
-    with:
-      extra-modules: "/github/workspace/boards"
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
